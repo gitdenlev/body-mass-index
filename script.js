@@ -9,8 +9,8 @@ resultBtn.addEventListener('click', function () {
   const weightValue = parseFloat(userWeight.value.replace(',', '.'));
   const heightValue = parseFloat(userHeight.value.replace(',', '.'));
   if (isNaN(weightValue) || isNaN(heightValue) || weightValue <= 0 || heightValue <= 0) {
-    userInfo.textContent = 'Некоректно';
-    userString.textContent = '';
+    userInfo.textContent = 'Ви не ввели дані';
+    userString.textContent = 'Ви не ввели дані';
     return;
   }
   const bmiValue = weightValue / (heightValue * heightValue);
